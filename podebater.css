@@ -11,17 +11,29 @@ body, html {
     font-family: Arial, Tahoma, sans-serif;
 }
 
+#topo  { 
+    width: 100%;
+    height: 100%;
+    position: absolute;/* criamos um contexto para posicionamento */
+    background-size: 50px;
+   
+    
+}
+
 #fundo-externo {
     overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
     width: 100%;
     height: 100%;
-    position: relative; /* criamos um contexto para posicionamento */
+    position: fixed; /* criamos um contexto para posicionamento */
+    text-align: justify;
+    padding: 200px 0;
 }
 
 #fundo {
-    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    position: relative; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
     width: 100%;
     height: 100%;
+     
 }
 
 #fundo img {
@@ -31,7 +43,7 @@ body, html {
 
 #site {
     position: absolute;
-    top: 40px;
+    top: 200px;
     left: 50%;
     width: 560px;
     padding: 20px;
@@ -42,4 +54,25 @@ body, html {
 
 p {
     margin-bottom: 1.5em;
+}
+
+#borda_texto {
+    text-shadow: 2px 2px red;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Tahoma, sans-serif;
+    color: black;
+    padding: 10px;
+    margin-bottom: 50px;
+    }
+
+footer{
+  display:block;
+  position:fixed;
+  width:100%;
+  bottom:0vh;
+  left:0;
+  background:white;*
+  text-align:center;
+  padding: 20px 0;
 }
