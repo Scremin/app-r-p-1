@@ -30,14 +30,14 @@ function adaptImage(targetimg) {
     // posição = dimensão da imagem/2 - dimensão da tela/2
     destheight = $('#fundo img').height();
     var posy = (destheight/2 - wheight/2);
-    var posx = (destwidth/4 - wwidth/4);
+    var posx = (destwidth/2 - wwidth/2);
 
     //se o cálculo das posições der resultado positivo, trocamos para negativo
     if(posy > 0) {
-    posy *= 1;
+    posy *= -1;
     }
     if(posx > 0) {
-    posx *= 1;
+    posx *= -1;
     }
 
     // colocamos através da função css() do jquery o posicionamento da imagem
