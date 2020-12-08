@@ -11,13 +11,24 @@ body, html {
     font-family: Arial, Tahoma, sans-serif;
 }
 
-#topo  { 
+#topo-externo{
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
     width: 100%;
     height: 100%;
-    position: absolute;/* criamos um contexto para posicionamento */
-    background-size: 50px;
-   
+    position: fixed; /* criamos um contexto para posicionamento */
+}
+
+#topo  { 
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
     
+}
+
+#topo img {
+    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    height: 22%;
+    position: absolute;
 }
 
 #fundo-externo {
@@ -25,14 +36,15 @@ body, html {
     width: 100%;
     height: 100%;
     position: fixed; /* criamos um contexto para posicionamento */
-    text-align: justify;
-    padding: 200px 0;
+   
+    
 }
 
 #fundo {
-    position: relative; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
     width: 100%;
     height: 100%;
+    padding: 200px 0px;
      
 }
 
@@ -43,7 +55,7 @@ body, html {
 
 #site {
     position: absolute;
-    top: 200px;
+    top: 300px;
     left: 50%;
     width: 560px;
     padding: 20px;

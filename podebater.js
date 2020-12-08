@@ -1,4 +1,4 @@
-// Função adaptImage();
+/*// Função adaptImage();
 // Parâmetros: targetimg (objeto jquery com elementos selecionados)
 function adaptImage(targetimg) {
     var wheight = $(window).height(); // altura da janela do navegador
@@ -34,7 +34,7 @@ function adaptImage(targetimg) {
 
     //se o cálculo das posições der resultado positivo, trocamos para negativo
     if(posy > 0) {
-    posy *= 1;
+    posy *= -1;
     }
     if(posx > 0) {
     posx *= -1;
@@ -47,9 +47,10 @@ function adaptImage(targetimg) {
     //quando a janela for redimensionada, adaptamos a imagem
     $(window).resize(function() {
     adaptImage($('#fundo img'));
+    
 });
 
 //quando a página carregar, fazemos o mesmo
 $(window).load(function() {
     $(window).resize();
-});
+});*/
