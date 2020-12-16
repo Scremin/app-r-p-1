@@ -4,30 +4,36 @@
     padding:0;
 }
 
-/* para garantir que estes elementos ocuparão toda a tela */
+/* para garantir que estes elementos ocuparão toda a tela 
 body, html {
-    font-family: arial, helvetica, sans-serif;
+    /*font-family: arial, helvetica, sans-serif;
     font-size: 12px;
        
-}
+}*/
 .container{
     background-color: black;
     /*padding: 10px;*/
     border: 5px solid;
+    font-family: url("./Fontes/GothamRnd-Bold.otf", Arial, Helvetica, sans-serif);
+
+    
  }
 .content{
-    font-size: 15px;
+    font-size: 50px;
     color: red;
     padding: 10px;
-    text-align: justify;
+    text-align: center;
     text-decoration: none;
     position: static;
+    font-family: fantasy;
+    
 }
 .container2{
     background-color: black;
     /*padding: 10px;*/
     border-top: 1px solid white;
     image-resolution: 5px;
+    
  }
  .img{
     width: 10px; /* tamanho do fundo */
