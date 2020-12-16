@@ -10,80 +10,36 @@ body, html {
     font-size: 12px;
        
 }
-
-.menu{
-    list-style:none;
-    border:1px solid #c0c0c0;
-    float:left;
-    }
-
-#topo-externo{
-    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
-    width: 100%;
-    height: 100%;
-    position: fixed; /* criamos um contexto para posicionamento */
-}
-
-#topo  { 
-    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
-    width: 100%;
-    height: 5%;
+.container{
     background-color: black;
-       
+    /*padding: 10px;*/
+    border: 5px solid;
+ }
+.content{
+    font-size: 15px;
+    color: red;
+    padding: 10px;
+    text-align: justify;
+    text-decoration: none;
+    position: static;
 }
+.container2{
+    background-color: black;
+    /*padding: 10px;*/
+    border-top: 1px solid white;
+    image-resolution: 5px;
+ }
+ .img{
+    width: 10px; /* tamanho do fundo */
+    /*position: static;
+    margin-right: 200px;
+    background-position:  center;*/
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 50%;
+ }
 
-.menu {
-    font-size: 13PX;
-    font-family: fantasy sans-serif;
-    font-style: italic;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
-    list-style:none;
-    border:1px solid whitesmoke;
-    float:left;
-         
-}
-
-.menu li{
-    position:relative;
-    float:left;
-    border-right:1px solid #c0c0c0;
-}
-
-.menu li a{color: whitesmoke; text-decoration:none; padding:5px 10px; display:block;}
-
-.menu li a:hover{
-    background: white;
-    color:#fff;
-    -moz-box-shadow:0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow:0px 0px 5px #fff;
-}
-
-.menu li  ul{
-    position:absolute;
-    top:25px;
-    left:10%;
-    background-color:#fff;
-    display:none;
-}
-
-.menu li:hover ul, .menu li.over ul{display:block;}
-
-.menu li ul li{
-    border:1px solid #c0c0c0;
-    display:block;
-    width:150px;
-    }
-
-#topo img {
-    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
-    height: 30%;
-    position: fixed;
-}
+ 
 
 #fundo-externo {
     overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
