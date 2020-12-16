@@ -4,47 +4,65 @@
     padding:0;
 }
 
-/* para garantir que estes elementos ocuparão toda a tela 
-body, html {
-    /*font-family: arial, helvetica, sans-serif;
-    font-size: 12px;
-       
-}*/
+
 .container{
     background-color: black;
     /*padding: 10px;*/
     border: 5px solid;
-    font-family: url("./Fontes/GothamRnd-Bold.otf", Arial, Helvetica, sans-serif);
-
-    
- }
+}
 .content{
-    font-size: 50px;
+    font-size: 20px;
+    font-family: fantasy;
     color: red;
+    padding-right: 0px;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ li{
+    display: inline;
+    float: left;
     padding: 10px;
     text-align: center;
-    text-decoration: none;
-    position: static;
-    font-family: fantasy;
-    
+    padding: 20px 16px;
 }
+
+
 .container2{
     background-color: black;
     /*padding: 10px;*/
     border-top: 1px solid white;
-    image-resolution: 5px;
     
  }
- .img{
-    width: 10px; /* tamanho do fundo */
-    /*position: static;
-    margin-right: 200px;
-    background-position:  center;*/
-    font-size: 10px;
-    padding: 10px;
-    border-radius: 50%;
+ .img1{
+    padding: 15px;
+    display: inline;
+    float: right;
+    margin: 0;
+    
  }
+ .img2{
+    padding: 15px;
+    display: inline;
+    float: right;
+    margin: 0;
+    
+    
+ }
+ .img3{
+    padding: 15px;
+    display: inline;
+    float: right;
+    margin: 0;
 
+    
+ }
  
 
 #fundo-externo {
