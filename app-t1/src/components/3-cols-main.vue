@@ -8,7 +8,6 @@
 
             <div class="classe1 panel">
                 <button class="panel classe2">Quem Somos
-                    <hr class="form-aux">
                 </button>
             </div>
 
