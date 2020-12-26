@@ -48,7 +48,7 @@
     justify-content: center;
     align-items: space-around;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: space-around;
 
     height: 90%;
     width: 90%;
@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content:space-around;
+    /*align-content:space-around;*/
 
     height: 90%;
     width: 25%;
