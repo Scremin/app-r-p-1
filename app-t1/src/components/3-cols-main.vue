@@ -1,27 +1,29 @@
 <template>
-    <div class="Main">
+    <v-content>
+        <div class="Main">
 
-        <div class="classe1">
-            <div class="">
-                <button class="panel classe2">Quem Somos
-                    <hr class="form-aux">
-                </button>
+            <div class="classe1">
+                <div class="">
+                    <button class="panel classe2">Quem Somos
+                        <hr class="form-aux">
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <div class="classe1">
-            <div class="classe2">
-                <button class="form-element">Trabalhe Conosco</button>
+            <div class="classe1">
+                <div class="classe2">
+                    <button class="form-element">Trabalhe Conosco</button>
+                </div>
             </div>
-        </div>
 
-        <div class="classe1">
-            <div class="classe2">
-                <button class="form-element">Nossos Produtos</button>
+            <div class="classe1">
+                <div class="classe2">
+                    <button class="form-element">Nossos Produtos</button>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    <v-content>
 </template>
 
 <script>
