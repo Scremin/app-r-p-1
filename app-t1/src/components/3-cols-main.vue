@@ -71,7 +71,7 @@
     height: 90%;
     width: 100%;
     /*padding: 10%;*/
-    /*margin: 10px;*/
+    margin: 10px;
 
     border: solid yellow;
 }
@@ -86,7 +86,7 @@
     /*padding: 10%;*/
     /*margin: 10%;*/
 
-    /*border: solid red;*/ /* TESTE DE POSICIONAMENTO */
+    border: solid red; /* TESTE DE POSICIONAMENTO */
 }
 
 .form-aux {
