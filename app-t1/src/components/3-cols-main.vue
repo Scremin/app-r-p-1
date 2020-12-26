@@ -3,9 +3,7 @@
         <div class="Main panel">
 
             <div class="classe11 panel">
-                <div class="classe2">
-                    <button class="form-element">Trabalhe Conosco</button>
-                </div>
+                <button class="form-element">Trabalhe Conosco</button>
             </div>
 
             <div class="classe1 panel">
@@ -49,7 +47,7 @@
     /*flex-direction: column;*/
     justify-content: center;
     align-items: space-around;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-content: space-around;
 
     height: 90%;
