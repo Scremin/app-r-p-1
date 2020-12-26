@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <MainMenu/>
+      <ColsMain/>
       <BodyMain/>
       <Footer/>
     </v-main>
@@ -12,6 +13,7 @@
 import MainMenu from '@/components/MainMenu'
 import BodyMain from '@/components/BodyMain'
 import Footer from '@/components/Footer'
+import ColsMain from '@/components/3-cols-main'
 
 export default {
   name: 'App',
@@ -19,6 +21,7 @@ export default {
   components: {
     MainMenu,
     BodyMain,
+    ColsMain,
     Footer
   },
 
