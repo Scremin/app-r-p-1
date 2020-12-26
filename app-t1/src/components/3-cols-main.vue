@@ -1,6 +1,6 @@
 <template>
     <v-content>
-        <div class="Main">
+        <div class="Main panel">
 
             <div class="classe1">
                 <div class="">
@@ -53,7 +53,7 @@
     align-content: space-around;
 
     height: 90%;
-    width: 90%;
+    width: 100%;
 
     border: solid green;
     /*background: linear-gradient(to right, rgb(8, 80, 120), rgb(133, 216, 206));*/
@@ -69,7 +69,7 @@
     /*align-content:space-around;*/
 
     height: 90%;
-    width: 25%;
+    width: 100%;
     /*padding: 10%;*/
     /*margin: 10px;*/
 
