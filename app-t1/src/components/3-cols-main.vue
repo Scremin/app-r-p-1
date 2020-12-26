@@ -2,7 +2,7 @@
     <v-content>
         <div class="Main panel">
 
-            <div class="classe1">
+            <div class="classe1 panel">
                 <div class="">
                     <button class="panel classe2">Quem Somos
                         <hr class="form-aux">
@@ -10,13 +10,13 @@
                 </div>
             </div>
 
-            <div class="classe1">
+            <div class="classe11 panel">
                 <div class="classe2">
                     <button class="form-element">Trabalhe Conosco</button>
                 </div>
             </div>
 
-            <div class="classe1">
+            <div class="classe12 panel">
                 <div class="classe2">
                     <button class="form-element">Nossos Produtos</button>
                 </div>
@@ -76,6 +76,36 @@
     border: solid yellow;
 }
 
+.classe11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*align-content:space-around;*/
+
+    height: 90%;
+    width: 30%;
+    /*padding: 10%;*/
+    margin: 10px;
+
+    border: solid rgb(236, 4, 159);
+}
+
+.classe12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*align-content:space-around;*/
+
+    height: 90%;
+    width: 20%;
+    /*padding: 10%;*/
+    margin: 10px;
+
+    border: solid blue;
+}
+
 .classe2 {
     display: flex;
     justify-content: center;
@@ -84,7 +114,7 @@
     width: 80%;
     /*height: 10%;*/
     /*padding: 10%;*/
-    /*margin: 10%;*/
+    margin: 10%;
 
     border: solid red; /* TESTE DE POSICIONAMENTO */
 }
