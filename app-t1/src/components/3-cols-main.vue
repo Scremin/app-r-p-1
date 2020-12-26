@@ -1,23 +1,26 @@
 <template>
     <div class="Main">
+
         <div class="classe1">
             <div class="">
                 <button class="panel classe2">Quem Somos
                     <hr class="form-aux">
-                    teste2
                 </button>
             </div>
         </div>
+
         <div class="classe1">
             <div class="classe2">
                 <button class="form-element">Trabalhe Conosco</button>
             </div>
         </div>
+
         <div class="classe1">
             <div class="classe2">
                 <button class="form-element">Nossos Produtos</button>
             </div>
         </div>
+
     </div>
 </template>
 
@@ -59,9 +62,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*align-content: center;*/
+    align-content:space-between;
 
-    height: 100%;
+    height: 90%;
     width: 25%;
     /*padding: 10%;*/
     /*margin: 10px;*/
