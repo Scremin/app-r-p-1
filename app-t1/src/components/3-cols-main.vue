@@ -49,6 +49,8 @@
     height: 90%;
     width: 100%;
 
+    margin: 10px;
+
     border: solid green;
     /*background: linear-gradient(to right, rgb(8, 80, 120), rgb(133, 216, 206));*/
 
@@ -78,7 +80,7 @@
     /*align-content:space-around;*/
 
     height: 90%;
-    width: 30%;
+    width: 35%;
     /*padding: 10%;*/
     margin: 10px;
 
@@ -93,7 +95,7 @@
     /*align-content:space-around;*/
 
     height: 90%;
-    width: 20%;
+    width: 25%;
     /*padding: 10%;*/
     margin: 10px;
 
