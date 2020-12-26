@@ -2,17 +2,17 @@
     <v-content>
         <div class="Main panel">
 
+            <div class="classe11 panel">
+                <div class="classe2">
+                    <button class="form-element">Trabalhe Conosco</button>
+                </div>
+            </div>
+
             <div class="classe1 panel">
                 <div class="">
                     <button class="panel classe2">Quem Somos
                         <hr class="form-aux">
                     </button>
-                </div>
-            </div>
-
-            <div class="classe11 panel">
-                <div class="classe2">
-                    <button class="form-element">Trabalhe Conosco</button>
                 </div>
             </div>
 
