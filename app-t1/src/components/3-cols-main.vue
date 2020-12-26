@@ -47,7 +47,7 @@
     /*flex-direction: column;*/
     justify-content: center;
     align-items: space-around;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-content: space-around;
 
     height: 90%;
