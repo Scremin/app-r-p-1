@@ -7,17 +7,13 @@
             </div>
 
             <div class="classe1 panel">
-                <div class="">
-                    <button class="panel classe2">Quem Somos
-                        <hr class="form-aux">
-                    </button>
-                </div>
+                <button class="panel classe2">Quem Somos
+                    <hr class="form-aux">
+                </button>
             </div>
 
             <div class="classe12 panel">
-                <div class="classe2">
                     <button class="form-element">Nossos Produtos</button>
-                </div>
             </div>
 
         </div>
@@ -47,7 +43,7 @@
     /*flex-direction: column;*/
     justify-content: center;
     align-items: space-around;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-content: space-around;
 
     height: 90%;
