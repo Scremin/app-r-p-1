@@ -46,14 +46,14 @@
     align-content: space-around;
 
     height: 90%;
-    width: 100%;
+    width: 90%;
 
     margin: 10px;
 
     border: solid green;
-    /*background: linear-gradient(to right, rgb(8, 80, 120), rgb(133, 216, 206));*/
+    /*background: linear-gradient(to right, rgb(8, 80, 120), rgb(133, 216, 206));
 
-    box-shadow: 0 2px 10px rgba(220, 240, 240, 0.35);
+    box-shadow: 0 2px 10px rgba(220, 240, 240, 0.35);*/
 }
 
 .classe1 {
