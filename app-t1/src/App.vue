@@ -1,15 +1,19 @@
 <template>
-  <v-app>
-    <v-main>
+  <div>
+    <Topo/>
+    <v-app>
       <MainMenu/>
-      <ColsMain/>
-      <BodyMain/>
+      <v-main class="class_position">
+        <ColsMain/>
+        <BodyMain/>
+      </v-main>
       <Footer/>
-    </v-main>
-  </v-app>
+    </v-app>
+  </div>
 </template>
 
 <script>
+import Topo from '@/components/Topo'
 import MainMenu from '@/components/MainMenu'
 import BodyMain from '@/components/BodyMain'
 import Footer from '@/components/Footer'
@@ -19,6 +23,7 @@ export default {
   name: 'App',
 
   components: {
+    Topo,
     MainMenu,
     BodyMain,
     ColsMain,
@@ -30,3 +35,18 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.class_topo_app {
+  display: flex;
+
+  margin-top: 10%;
+  border: solid violet;
+}
+.class_position {
+  display: flex;
+  /*flex-direction: column;*/
+
+  border: solid red;
+}
+</style>

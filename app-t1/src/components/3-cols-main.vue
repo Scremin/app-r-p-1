@@ -2,21 +2,30 @@
     <v-content>
         <div class="Main panel">
 
-            <div class="classe11 panel">
-                <button class="form-element">Trabalhe Conosco</button>
+            <div class="classeA panel">
+                <button class="classe2">Trabalhe Conosco</button>
+                <button class="classe2">Trabalhe Conosco</button>
+                <button class="classe2">Trabalhe Conosco</button>
+
             </div>
 
-            <div class="classe1 panel">
-                <button class="panel classe2">Quem Somos
-                </button>
+            <div class="classeB panel">
+                <button class="classe2">Quem Somos</button>
+                <button class="classe2">Quem Somos</button>
+                <button class="classe2">Trabalhe Conosco</button>
+                <button class="classe2">Trabalhe Conosco</button>
+                <button class="classe2">Quem Somos</button>
+                <button class="classe2">Quem Somos</button>
             </div>
 
-            <div class="classe12 panel">
-                    <button class="form-element">Nossos Produtos</button>
+            <div class="classeC panel">
+                <button class="classe2">Nossos Produtos</button>
+                <button class="classe2">Nossos Produtos</button>
+                <button class="classe2">Nova linha3</button>
             </div>
 
         </div>
-    <v-content>
+    </v-content>
 </template>
 
 <script>
@@ -38,17 +47,20 @@
 }
 
 .Main {
+    /*Linha com 3 items. Linhas espaçadas por space-around.*/
     display: flex;
     /*flex-direction: column;*/
-    justify-content: center;
+
+    /*justify-content: center;*/
+    align-content: space-around;
+    
     align-items: space-around;
     /*flex-wrap: wrap;*/
-    align-content: space-around;
 
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 98%;
 
-    margin: 10px;
+    margin: 1%;
 
     border: solid green;
     /*background: linear-gradient(to right, rgb(8, 80, 120), rgb(133, 216, 206));
@@ -56,60 +68,72 @@
     box-shadow: 0 2px 10px rgba(220, 240, 240, 0.35);*/
 }
 
-.classe1 {
+.classeB {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*align-content:space-around;*/
+    /*flex-direction: column;*/
+    
+    /*justify-content: center;*/
+    /*align-content: start;*/
+
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
+    flex-flow: wrap;
 
     height: 90%;
-    width: 100%;
+    width: 50%;
     /*padding: 10%;*/
-    margin: 10px;
+    margin: 1%;
 
     border: solid yellow;
 }
 
-.classe11 {
+.classeA {
     display: flex;
+
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    
+    align-items: center;*/
     /*align-content:space-around;*/
 
+    flex-flow: wrap;
+
     height: 90%;
-    width: 35%;
+    width: 25%;
     /*padding: 10%;*/
-    margin: 10px;
+    margin: 1%;
 
     border: solid rgb(236, 4, 159);
 }
 
-.classe12 {
+.classeC {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    justify-content: start; /* CONTEUDO DENTRO DA REGIÃO AZUL. */
+    padding: 1%;
+
     align-items: center;
     /*align-content:space-around;*/
 
     height: 90%;
     width: 25%;
     /*padding: 10%;*/
-    margin: 10px;
+    margin: 1%;
 
     border: solid blue;
 }
 
 .classe2 {
     display: flex;
+    
     justify-content: center;
     align-items: center;
 
-    width: 80%;
+    width: 100%;
     /*height: 10%;*/
     /*padding: 10%;*/
-    margin: 10%;
+    margin: 1%;
 
     border: solid red; /* TESTE DE POSICIONAMENTO */
 }

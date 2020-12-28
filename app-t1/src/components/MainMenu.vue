@@ -1,8 +1,12 @@
 <template>
     <v-app-bar
-      app
-      color="rgba(100, 100, 100, 0.8)"
-      dark
+    absolute
+    app
+    :collapse-on-scroll="!collapseOnScroll"
+    :collapse="!collapseOnScroll"
+    color="rgba(100, 100, 100, 0.8)"
+    dark
+    scroll-target="#scrolling-techniques-6"
     >
         <div class="d-flex align-center">
             <p>TESTE - app-r-p-v1</p>
@@ -23,18 +27,35 @@
             </div>
         </div>
 
-      <v-spacer></v-spacer>
+    <v-spacer></v-spacer>
 
-      <!-- href="https://github.com/vuetifyjs/vuetify/releases/latest" -->
-      <v-btn
+    <v-checkbox
+    v-model="collapseOnScroll"
+    color="white"
+    ></v-checkbox>
+
+    <!-- href="https://github.com/vuetifyjs/vuetify/releases/latest" -->
+    <v-btn
         target="_blank"
         text
-      >
+    >
         <span class="mr-2">Botão - teste</span>
         <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+    </v-btn>
     </v-app-bar>
 </template>
+
+<script>
+  export default {
+    name: 'MainMenu',
+
+    data() {
+        return {
+            collapseOnScroll: true
+        }
+    }
+  }
+</script>
 
 <style>
 .testCSS1 {
