@@ -3,7 +3,7 @@
         <div class="Main panel">
 
             <div class="classeA panel">
-                <button class="classe2">Testes de frases</button>
+                <button class="classe2">Teste frase</button>
                 <button class="classe2">Qualquer frase</button>
                 <button class="classe2">Teste de posicionamento</button>
             </div>
