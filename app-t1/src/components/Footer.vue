@@ -20,6 +20,14 @@
         <v-spacer></v-spacer>
         <div><strong>Colaboradores</strong></div>
         <div>IMG DA LOGO</div>
+
+        <v-btn
+            target="_blank"
+            text
+        >
+            <v-icon>mdi-open-in-new</v-icon>
+        </v-btn>
+
     </v-footer>
 </template>
 

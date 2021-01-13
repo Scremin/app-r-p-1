@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Topo/>
     <v-app>
       <MainMenu/>
       <v-main class="class_position">
@@ -13,7 +12,7 @@
 </template>
 
 <script>
-import Topo from '@/components/Topo'
+//import Topo from '@/components/Topo'
 import MainMenu from '@/components/MainMenu'
 import BodyMain from '@/components/BodyMain'
 import Footer from '@/components/Footer'
@@ -23,7 +22,7 @@ export default {
   name: 'App',
 
   components: {
-    Topo,
+    //Topo,
     MainMenu,
     BodyMain,
     ColsMain,

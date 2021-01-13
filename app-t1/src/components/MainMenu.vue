@@ -1,47 +1,81 @@
 <template>
     <v-app-bar
-    absolute
+    color="rgba(100, 100, 100, 0.8)"
     app
     :collapse-on-scroll="!collapseOnScroll"
     :collapse="!collapseOnScroll"
-    color="rgba(100, 100, 100, 0.8)"
     dark
     scroll-target="#scrolling-techniques-6"
     >
-        <div class="d-flex align-center">
-            <p>TESTE - app-r-p-v1</p>
-        </div>
-        
-        <div class="testCSS1">
-            <div>
-                <button class="testCSS2">Home-test</button>
-            </div>
-            <div>
-                <button class="testCSS2">Debatedores</button>
-            </div>
-            <div>
-                <button class="testCSS2">O que fazemos?</button>
-            </div>
-            <div>
-                <button class="testCSS2">Vem debater com a gente</button>
-            </div>
-        </div>
+        <v-bottom-navigation
+            :value="value"
+            color="red"
+        >
 
-    <v-spacer></v-spacer>
+            <v-btn
+                text
+            >
+                <span class="mr-2">APP-r-p-v1</span>
+            </v-btn>
 
-    <v-checkbox
-    v-model="collapseOnScroll"
-    color="white"
-    ></v-checkbox>
+            <v-btn
+                target="_blank"
+                text
+            >
+                <span class="mr-2">HOME</span>
+                <v-icon>mdi-home-variant</v-icon>
+            </v-btn>
+
+            <v-btn
+                target="_blank"
+                text
+            >
+                <span class="mr-2">DEBATEDORES</span>
+                <v-icon>mdi-boxing-glove</v-icon>
+            </v-btn>
+
+            <v-btn
+                target="_blank"
+                text
+            >
+                <span class="mr-2">O QUE FAZEMOS?</span>
+                <v-icon>mdi-comment-question</v-icon>
+            </v-btn>
+
+            <v-btn
+                target="_blank"
+                text
+            >
+                <span class="mr-2">VEM DEBATER COM A GENTE</span>
+                <v-icon>mdi-comment-plus-outline</v-icon>
+            </v-btn>
+
+            <v-spacer></v-spacer>
+
+            <v-btn
+                target="_blank"
+                text
+            >
+                <v-icon>mdi-facebook</v-icon>
+            </v-btn>
+
+            <v-btn
+                target="_blank"
+                text
+            >
+                <v-icon>mdi-instagram</v-icon>
+            </v-btn>
+
+            <v-btn
+                target="_blank"
+                text
+            >
+                <v-icon>mdi-youtube</v-icon>
+            </v-btn>
+
+        </v-bottom-navigation>
 
     <!-- href="https://github.com/vuetifyjs/vuetify/releases/latest" -->
-    <v-btn
-        target="_blank"
-        text
-    >
-        <span class="mr-2">Botão - teste</span>
-        <v-icon>mdi-open-in-new</v-icon>
-    </v-btn>
     </v-app-bar>
 </template>
 
@@ -55,6 +89,8 @@
         }
     }
   }
+/*
+*/
 </script>
 
 <style>

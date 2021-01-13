@@ -3,20 +3,53 @@
         <div class="Main panel">
 
             <div class="classeA panel">
-                <button class="classe2">Trabalhe Conosco</button>
-                <button class="classe2">Trabalhe Conosco</button>
-                <button class="classe2">Trabalhe Conosco</button>
-
+                <button class="classe2">Testes de frases</button>
+                <button class="classe2">Qualquer frase</button>
+                <button class="classe2">Teste de posicionamento</button>
             </div>
 
-            <div class="classeB panel">
-                <button class="classe2">Quem Somos</button>
-                <button class="classe2">Quem Somos</button>
-                <button class="classe2">Trabalhe Conosco</button>
-                <button class="classe2">Trabalhe Conosco</button>
-                <button class="classe2">Quem Somos</button>
-                <button class="classe2">Quem Somos</button>
-            </div>
+            <v-card class="classeB panel overflow-hidden">
+
+                <v-app-bar
+                    absolute
+                    color="#43a047"
+                    dark
+                    shrink-on-scroll
+                    src="https://picsum.photos/1920/1080?random"
+                    scroll-target="#scrolling-techniques-2"
+                    scroll-threshold="50"
+                >
+
+                    <template v-slot:img="{ props }">
+                        <v-img v-bind="props" gradient="to top right, rgba(55,236,186,.7), lightblue"></v-img>
+                    </template>
+
+                    <v-btn icon>
+                        <v-icon>mdi-information</v-icon>
+                    </v-btn>
+
+                    <v-toolbar-title>PODEBATER - ASSUNTO 1</v-toolbar-title>
+
+                    <v-spacer></v-spacer>
+
+                    <v-btn icon>
+                        <v-icon>mdi-heart</v-icon>
+                    </v-btn>
+                </v-app-bar>
+
+                <v-sheet id="scrolling-techniques-2" class="overflow-y-auto" max-height="300" width="700">
+                    <v-container class="position-items-card-center">
+                        <button class="classe3">Nossos Produtos one</button>
+                        <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos podem ter um grande nome</button>
+                    </v-container>
+                </v-sheet>
+
+            </v-card>
 
             <div class="classeC panel">
                 <button class="classe2">Nossos Produtos</button>
@@ -52,9 +85,10 @@
     /*flex-direction: column;*/
 
     /*justify-content: center;*/
-    align-content: space-around;
-    
-    align-items: space-around;
+
+    /*align-content: space-around;*/
+    /*align-items: space-around;*/
+
     /*flex-wrap: wrap;*/
 
     height: 100%;
@@ -72,12 +106,12 @@
     display: flex;
     /*flex-direction: column;*/
     
-    /*justify-content: center;*/
+    /*justify-content: left;*/
     /*align-content: start;*/
 
     /*align-items: center;*/
     /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
-    flex-flow: wrap;
+    /*flex-flow: wrap;*/
 
     height: 90%;
     width: 50%;
@@ -85,6 +119,14 @@
     margin: 1%;
 
     border: solid yellow;
+}
+
+.position-items-card-center{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 22%;
+    width: 100%;
 }
 
 .classeA {
@@ -134,6 +176,21 @@
     /*height: 10%;*/
     /*padding: 10%;*/
     margin: 1%;
+
+    border: solid red; /* TESTE DE POSICIONAMENTO */
+}
+
+.classe3 {
+    display: flex;
+    
+    justify-content:flex-start;
+    align-items: center;
+
+    width: 100%;
+    /*height: 10%;*/
+    /*padding: 10%;*/
+    margin: 1%;
+    margin-top: 4%;
 
     border: solid red; /* TESTE DE POSICIONAMENTO */
 }
