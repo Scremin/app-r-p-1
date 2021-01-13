@@ -45,6 +45,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="extra_espaco_1"
             >
                 <span class="mr-2">VEM DEBATER COM A GENTE</span>
                 <v-icon>mdi-comment-plus-outline</v-icon>
@@ -119,5 +120,9 @@
     margin-left: 25%;
     margin-right: 25%;
     margin-block-end: 5%;
+}
+
+.extra_espaco_1 {
+    margin-left: 1%;
 }
 </style>

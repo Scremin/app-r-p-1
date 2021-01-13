@@ -17,7 +17,7 @@
                     shrink-on-scroll
                     src="https://picsum.photos/1920/1080?random"
                     scroll-target="#scrolling-techniques-2"
-                    scroll-threshold="50"
+                    scroll-threshold="20"
                 >
 
                     <template v-slot:img="{ props }">
@@ -37,13 +37,25 @@
                     </v-btn>
                 </v-app-bar>
 
-                <v-sheet id="scrolling-techniques-2" class="overflow-y-auto" max-height="300" width="700">
+                <v-sheet id="scrolling-techniques-2" class="overflow-y-auto" max-height="600" width="700">
                     <v-container class="position-items-card-center">
-                        <button class="classe3">Nossos Produtos one</button>
+                        
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Teste</legend>
+                        </fieldset>
+                        
+                        <p class="classe3">
+                            <span>Nome</span>
+                            <br />
+                            <span>Nossos Produtos one</span>
+                        </p>
+                        
                         <button class="classe3">Nossos Produtos</button>
                         <button class="classe3">Nossos Produtos</button>
                         <button class="classe3">Nossos Produtos</button>
                         <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos</button>
+                        <button class="classe3">Nossos Produtos podem ter um grande nome</button>
                         <button class="classe3">Nossos Produtos</button>
                         <button class="classe3">Nossos Produtos podem ter um grande nome</button>
                     </v-container>
@@ -193,6 +205,29 @@
     margin-top: 4%;
 
     border: solid red; /* TESTE DE POSICIONAMENTO */
+    border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 16 / 
+    0px 0px 2px 2px / 2px 2px 2px 2px round stretch;
+    /*border-image-source: url("https://mdn.mozillademos.org/files/4127/border.png");*/
+    /*border-image-slice: 16;*/
+    /*border-image-repeat: stretch;*/ /* round ou repeat ou stretch*/
+    /*border-image-width: 90%;*/
+    border-image-outset: 6px; /* distância entre a borda e o retângulo interno à borda */
+}
+
+.fieldset-border {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+}
+
+.fieldset-border .legend-border {
+  font-size: 1.2em !important;
+  text-align: left !important;
+  width: auto;
+  padding: 0 10px;
+  border-bottom: none;
 }
 
 .form-aux {
