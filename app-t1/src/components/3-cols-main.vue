@@ -167,8 +167,8 @@
 
     flex-direction: column;
 
-    justify-content: center; /* Ajusta o conteúdo (item) da classe A no centro do caminho do percurso.*/
-    align-content: start; /* Ajusta o conteúdo (item) da classe A no início da percurso.*/
+    justify-content: start; /* Ajusta o conteúdo (item) da classe A no start do percurso.*/
+    align-content: center; /* Ajusta o conteúdo (item) da classe A no centro do caminho do percurso.*/
     
     /*align-items: center;*/
     /**/
