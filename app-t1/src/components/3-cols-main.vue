@@ -217,7 +217,7 @@
     align-items: center;
 
     width: 100%;
-    height: 10opx;
+    height: 10px;
     /*padding: 10%;*/
     margin: 1%;
 
