@@ -166,10 +166,12 @@
     display: flex;
 
     flex-direction: column;
-    /*justify-content: center;
     
-    align-items: center;*/
-    /*align-content:space-around;*/
+    justify-content: center;
+    align-content:space-around;
+    
+    /*align-items: center;*/
+    /**/
 
     flex-flow: wrap;
 
