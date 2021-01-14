@@ -166,9 +166,9 @@
     display: flex;
 
     flex-direction: column;
-    
+
     justify-content: center;
-    align-content:space-around;
+    /*align-content: start;*/
     
     /*align-items: center;*/
     /**/
