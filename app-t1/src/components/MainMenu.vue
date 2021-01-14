@@ -12,13 +12,14 @@
             :value="value"
             color="red"
         >
-
-            <v-btn
-                text
-                class="position-item-menu"
-            >
-                <span class="mr-2">APP-r-p-v1</span>
-            </v-btn>
+            <v-img
+            class="position-item-menu"
+            contain
+            :src="require('@/assets/ImgPodebater.png')"
+            transition="scale-transition"
+            width="10"
+            height="60"
+            />
 
             <v-btn
                 target="_blank"
@@ -91,10 +92,13 @@
 <script>
   export default {
     name: 'MainMenu',
-
+    //<v-img class="mr-2">{{ logo }}</v-img>
     data() {
         return {
-            collapseOnScroll: true
+            collapseOnScroll: true,
+			logo: [
+                { src: require("@/assets/ImgPodebater.png") }
+            ]
         }
     }
   }

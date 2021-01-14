@@ -12,17 +12,13 @@
 
                 <v-app-bar
                     absolute
-                    color="rgba(243, 6, 6, 0.829);"
+                    color="rgb(255, 191, 63)"
                     dark
                     shrink-on-scroll
-                    src="https://picsum.photos/1920/1080?random"
+                    :src="require('@/assets/imgCapaP.jpg')"
                     scroll-target="#scrolling-techniques-2"
                     scroll-threshold="20"
                 >
-
-                    <template v-slot:img="{ props }">
-                        <v-img v-bind="props" gradient="to top right, rgba(55,236,186,.7), lightblue"></v-img>
-                    </template>
 
                     <v-btn icon>
                         <v-icon>mdi-information</v-icon>
@@ -40,7 +36,7 @@
                 <v-sheet id="scrolling-techniques-2" class="overflow-y-auto" max-height="600" width="700">
                     <v-container class="position-items-card-center">
                         
-                        <fieldset class="fieldset-border">Esse aqui é o primeiro comentário...
+                        <fieldset class="fieldset-border">Esse é o primeiro comentário...
                             <legend class="legend-border">Jorge</legend>
                         </fieldset>
                         
@@ -65,10 +61,10 @@
 
                         <fieldset class="fieldset-border">
                             <legend class="legend-border">Antonio</legend>
-                            diga você..
+                            Diga lá você..
                         </fieldset>
 
-                        <button class="classe3">Nossos Produtos podem ter um grande nome</button>
+                        <button class="classe3">Nosso conteúdo de teste é o melhor.</button>
                     </v-container>
                 </v-sheet>
 
@@ -94,6 +90,10 @@
         }
     }
   }
+/* gradiente alocado na imagem da sheet na classe B (central)
+<template v-slot:img="{ props }">
+    <v-img v-bind="props" gradient="to top right, rgb(255, 191, 63), lightblue"></v-img>
+</template>*/
 </script>
 
 <style scoped>
@@ -209,7 +209,7 @@
     border-bottom-left-radius: 8px;
 
     /*border: solid blue;*/
-    color: rgba(255, 255, 255, 0.9);
+    color:rgb(45, 41, 38);
 }
 
 .classe2 {
@@ -231,7 +231,7 @@
 
     border: 1px groove red; /* TESTE DE POSICIONAMENTO */
 
-    background-color: rgb(46, 46, 46);
+    background-color: rgba(1, 1, 1, 0.9);
 }
 
 .classe4 {
@@ -252,7 +252,7 @@
 
     border: 1px groove red; /* TESTE DE POSICIONAMENTO */
 
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(255, 191, 63);
 }
 
 .classe3 {
