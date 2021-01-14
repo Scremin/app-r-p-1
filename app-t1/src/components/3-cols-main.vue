@@ -167,8 +167,8 @@
 
     flex-direction: column;
 
-    justify-content: center;
-    /*align-content: start;*/
+    /*justify-content: center;*/
+    align-content: start;
     
     /*align-items: center;*/
     /**/
