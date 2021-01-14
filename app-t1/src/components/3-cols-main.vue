@@ -1,6 +1,6 @@
 <template>
     <v-content>
-        <div class="Main panel">
+        <div class="Main panel2">
 
             <div class="classeA panel">
                 <button class="classe2">Teste frases</button>
@@ -8,11 +8,11 @@
                 <button class="classe2">Teste de posicionamento</button>
             </div>
 
-            <v-card class="classeB panel overflow-hidden">
+            <v-card class="classeB panel2 overflow-hidden">
 
                 <v-app-bar
                     absolute
-                    color="#43a047"
+                    color="rgba(243, 6, 6, 0.829);"
                     dark
                     shrink-on-scroll
                     src="https://picsum.photos/1920/1080?random"
@@ -40,23 +40,34 @@
                 <v-sheet id="scrolling-techniques-2" class="overflow-y-auto" max-height="600" width="700">
                     <v-container class="position-items-card-center">
                         
-                        <fieldset class="fieldset-border">
-                            <legend class="legend-border">Teste</legend>
+                        <fieldset class="fieldset-border">Esse aqui é o primeiro comentário...
+                            <legend class="legend-border">Jorge</legend>
                         </fieldset>
                         
-                        <p class="classe3">
-                            <span>Nome</span>
-                            <br />
-                            <span>Nossos Produtos one</span>
-                        </p>
+                        <button class="classe3">
+                            ALERTA: O comentário x ultrapassou os limites de diálogo pre-definido
+                        </button>
                         
-                        <button class="classe3">Nossos Produtos</button>
-                        <button class="classe3">Nossos Produtos</button>
-                        <button class="classe3">Nossos Produtos</button>
-                        <button class="classe3">Nossos Produtos</button>
-                        <button class="classe3">Nossos Produtos</button>
-                        <button class="classe3">Nossos Produtos podem ter um grande nome</button>
-                        <button class="classe3">Nossos Produtos</button>
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Osvald</legend>
+                            Talvez o x seja y
+                        </fieldset>
+
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Abigaiu</legend>
+                            Acho que não é bem assim..
+                        </fieldset>
+
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Marco</legend>
+                            E como seria?
+                        </fieldset>
+
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Antonio</legend>
+                            diga você..
+                        </fieldset>
+
                         <button class="classe3">Nossos Produtos podem ter um grande nome</button>
                     </v-container>
                 </v-sheet>
@@ -64,9 +75,9 @@
             </v-card>
 
             <div class="classeC panel">
-                <button class="classe2">Nossos Produtos</button>
-                <button class="classe2">Nossos Produtos</button>
-                <button class="classe2">Nova linha3</button>
+                <button target="_blank" class="classe2">Assunto 2</button>
+                <button class="classe2">Assunto 3</button>
+                <button class="classe2">Assunto 4</button>
             </div>
 
         </div>
@@ -91,6 +102,11 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+.panel2 {
+    /* [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+    box-shadow: 3px 2px 50px 10px rgb(243, 6, 6);
+}
+
 .Main {
     /*Linha com 3 items. Linhas espaçadas por space-around.*/
     display: flex;
@@ -108,7 +124,12 @@
 
     margin: 1%;
 
-    border: solid green;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+
+    /*border: solid green;*/
     /*background: linear-gradient(to right, rgb(8, 80, 120), rgb(133, 216, 206));
 
     box-shadow: 0 2px 10px rgba(220, 240, 240, 0.35);*/
@@ -130,7 +151,7 @@
     /*padding: 10%;*/
     margin: 1%;
 
-    border: solid yellow;
+    /*border: solid yellow;*/
 }
 
 .position-items-card-center{
@@ -154,10 +175,15 @@
 
     height: 90%;
     width: 25%;
-    /*padding: 10%;*/
+    padding: 1%;
     margin: 1%;
 
-    border: solid rgb(236, 4, 159);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    /*border: solid rgb(236, 4, 159);*/
 }
 
 .classeC {
@@ -175,7 +201,13 @@
     /*padding: 10%;*/
     margin: 1%;
 
-    border: solid blue;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    /*border: solid blue;*/
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .classe2 {
@@ -189,7 +221,14 @@
     /*padding: 10%;*/
     margin: 1%;
 
-    border: solid red; /* TESTE DE POSICIONAMENTO */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    border: 1px groove red; /* TESTE DE POSICIONAMENTO */
+
+    background-color: rgb(46, 46, 46);
 }
 
 .classe3 {
@@ -198,35 +237,50 @@
     justify-content:flex-start;
     align-items: center;
 
-    width: 100%;
+    /*width: 100%;*/
     /*height: 10%;*/
     /*padding: 10%;*/
-    margin: 1%;
-    margin-top: 4%;
+    /*margin: 1%;*/
+    /*margin-top: 4%;*/
 
     border: solid red; /* TESTE DE POSICIONAMENTO */
-    border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 16 / 
-    0px 0px 2px 2px / 2px 2px 2px 2px round stretch;
-    /*border-image-source: url("https://mdn.mozillademos.org/files/4127/border.png");*/
-    /*border-image-slice: 16;*/
-    /*border-image-repeat: stretch;*/ /* round ou repeat ou stretch*/
-    /*border-image-width: 90%;*/
-    border-image-outset: 6px; /* distância entre a borda e o retângulo interno à borda */
+    margin: 1em 0 !important; /* topo=inferior direita=esquerda */
+    
+    /*border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 16 / 
+    2px 2px 2px 2px / 2px 2px 2px 2px round stretch;*/
+    
+    border-image-source: url("https://mdn.mozillademos.org/files/4127/border.png");
+    border-image-slice: 6;
+    border-image-repeat: round stretch; /* round ou repeat ou stretch*/
+    border-image-width: 2px 2px 2px 2px;
+    border-image-outset: 2px 2px 2px 2px; /* distância entre a borda e o retângulo interno à borda */
 }
 
 .fieldset-border {
-  border: 1px groove #ddd !important;
-  padding: 0 1.4em 1.4em 1.4em !important;
-  margin: 0 0 1.5em 0 !important;
-  -webkit-box-shadow: 0px 0px 0px 0px #000;
-  box-shadow: 0px 0px 0px 0px #000;
+  border: 1px groove rgba(83, 61, 61, 0.2) !important;
+  border-style: dashed !important;
+
+  /*border-width: medium;
+  border-color: rgba(83, 61, 61, 0.897);*/
+
+  padding: 0 1.4em 1.4em 1.4em !important; /* topo direita inferior esquerda */
+  /*margin: 0 0 1em 0 !important;*/ /* topo direita inferior esquerda */
+
+  /*-webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;*/
+
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+
 }
 
 .fieldset-border .legend-border {
   font-size: 1.2em !important;
   text-align: left !important;
   width: auto;
-  padding: 0 10px;
+  padding: 0 10px; /* topo=inferior direita=esquerda */
   border-bottom: none;
 }
 

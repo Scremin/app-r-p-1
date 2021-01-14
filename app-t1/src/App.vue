@@ -46,6 +46,6 @@ export default {
   display: flex;
   /*flex-direction: column;*/
 
-  border: solid red;
+  /*border: solid red;*/
 }
 </style>

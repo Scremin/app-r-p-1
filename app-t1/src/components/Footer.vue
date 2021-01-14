@@ -18,8 +18,8 @@
         <div>{{ nomeFooter }} &copy; {{ new Date().getFullYear() }}</div>
         <div class="footers">.</div>
         <v-spacer></v-spacer>
-        <div><strong>Colaboradores</strong></div>
-        <div>IMG DA LOGO</div>
+        <div><strong>Colaboradores e Parcerias</strong></div>
+        <div>IMG</div>
 
         <v-btn
             target="_blank"
@@ -35,7 +35,7 @@
 export default {
     data() {
         return {
-            nomeFooter: 'TEST',
+            nomeFooter: 'PODEBATER',
             emailInserido: ''
         }
     },

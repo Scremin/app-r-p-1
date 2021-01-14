@@ -1,6 +1,6 @@
 <template>
     <v-app-bar
-    color="rgba(100, 100, 100, 0.8)"
+    color="rgba(255, 255, 255, 0.1)"
     app
     :collapse-on-scroll="!collapseOnScroll"
     :collapse="!collapseOnScroll"
@@ -8,6 +8,7 @@
     scroll-target="#scrolling-techniques-6"
     >
         <v-bottom-navigation
+            class="position-menu"
             :value="value"
             color="red"
         >
@@ -120,6 +121,16 @@
     margin-left: 25%;
     margin-right: 25%;
     margin-block-end: 5%;
+}
+
+.position-menu {
+    margin-top: 40px;
+
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+
 }
 
 .extra_espaco_1 {
