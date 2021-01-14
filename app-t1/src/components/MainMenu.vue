@@ -15,6 +15,7 @@
 
             <v-btn
                 text
+                class="position-item-menu"
             >
                 <span class="mr-2">APP-r-p-v1</span>
             </v-btn>
@@ -22,6 +23,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="position-item-menu"
             >
                 <span class="mr-2">HOME</span>
                 <v-icon>mdi-home-variant</v-icon>
@@ -30,6 +32,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="position-item-menu"
             >
                 <span class="mr-2">DEBATEDORES</span>
                 <v-icon>mdi-boxing-glove</v-icon>
@@ -38,6 +41,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="position-item-menu"
             >
                 <span class="mr-2">O QUE FAZEMOS?</span>
                 <v-icon>mdi-comment-question</v-icon>
@@ -46,7 +50,7 @@
             <v-btn
                 target="_blank"
                 text
-                class="extra_espaco_1"
+                class="extra_espaco_1 position-item-menu"
             >
                 <span class="mr-2">VEM DEBATER COM A GENTE</span>
                 <v-icon>mdi-comment-plus-outline</v-icon>
@@ -57,6 +61,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="position-item-menu"
             >
                 <v-icon>mdi-facebook</v-icon>
             </v-btn>
@@ -64,6 +69,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="position-item-menu"
             >
                 <v-icon>mdi-instagram</v-icon>
             </v-btn>
@@ -71,6 +77,7 @@
             <v-btn
                 target="_blank"
                 text
+                class="position-item-menu"
             >
                 <v-icon>mdi-youtube</v-icon>
             </v-btn>
@@ -96,33 +103,6 @@
 </script>
 
 <style>
-.testCSS1 {
-    display: flex;
-    /*flex-direction: column;
-    flex-wrap: wrap;*/
-
-    justify-content: center;
-    justify-items: space-between;
-
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-block-end: 5%;
-}
-.testCSS2 {
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    justify-content: center;*/
-    justify-items: center;
-
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-block-end: 5%;
-}
-
 .position-menu {
     margin-top: 40px;
 
@@ -131,6 +111,10 @@
     border-top-left-radius: 38px;
     border-bottom-left-radius: 38px;
 
+}
+
+.position-item-menu {
+    margin-top: 8px;
 }
 
 .extra_espaco_1 {

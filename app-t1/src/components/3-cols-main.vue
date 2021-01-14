@@ -75,9 +75,9 @@
             </v-card>
 
             <div class="classeC panel">
-                <button target="_blank" class="classe2">Assunto 2</button>
-                <button class="classe2">Assunto 3</button>
-                <button class="classe2">Assunto 4</button>
+                <button target="_blank" class="classe4">Assunto 2</button>
+                <button class="classe4">Assunto 3</button>
+                <button class="classe4">Assunto 4</button>
             </div>
 
         </div>
@@ -217,7 +217,28 @@
     align-items: center;
 
     width: 100%;
-    /*height: 10%;*/
+    height: 10opx;
+    /*padding: 10%;*/
+    margin: 1%;
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    border: 1px groove red; /* TESTE DE POSICIONAMENTO */
+
+    background-color: rgb(46, 46, 46);
+}
+
+.classe4 {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    /*height: 100%;*/
     /*padding: 10%;*/
     margin: 1%;
 
