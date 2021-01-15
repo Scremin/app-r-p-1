@@ -281,8 +281,10 @@
 }
 
 .fieldset-border {
-  border: 1px groove rgba(83, 61, 61, 0.2) !important;
+  border: 1px groove rgb(255, 191, 63) !important;
   border-style: dashed !important;
+
+  /*color: rgb(255, 191, 63);*/
 
   /*border-width: medium;
   border-color: rgba(83, 61, 61, 0.897);*/
@@ -306,6 +308,8 @@
   width: auto;
   padding: 0 10px; /* topo=inferior direita=esquerda */
   border-bottom: none;
+
+  color: rgb(252, 162, 36); /* Amarelo mais intenso que o amarelo padrão do site */
 }
 
 .form-aux {
