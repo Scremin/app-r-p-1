@@ -63,6 +63,8 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        margin-top: 4%;
     }
 
     .footers {
@@ -71,7 +73,7 @@ export default {
     }
 
     hr {
-        padding: 0px 100px 0px;
+        padding: 0px 100px;
     }
 
     .form-element {

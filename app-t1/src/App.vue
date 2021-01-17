@@ -3,8 +3,7 @@
     <v-app>
       <MainMenu/>
       <v-main class="class_position">
-        <ColsMain/>
-        <BodyMain/>
+        <MainPage/>
       </v-main>
       <Footer/>
     </v-app>
@@ -12,11 +11,16 @@
 </template>
 
 <script>
+/* Página de Debate
+        <ColsMain/>
+        <BodyMain/>
+*/
 //import Topo from '@/components/Topo'
 import MainMenu from '@/components/MainMenu'
-import BodyMain from '@/components/BodyMain'
+//import BodyMain from '@/components/BodyMain'
 import Footer from '@/components/Footer'
-import ColsMain from '@/components/3-cols-main'
+//import ColsMain from '@/components/3-cols-main'
+import MainPage from '@/components/mainPage'
 
 export default {
   name: 'App',
@@ -24,9 +28,10 @@ export default {
   components: {
     //Topo,
     MainMenu,
-    BodyMain,
-    ColsMain,
-    Footer
+    //BodyMain,
+    //ColsMain,
+    Footer,
+    MainPage
   },
 
   data: () => ({
