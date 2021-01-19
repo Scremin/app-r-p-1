@@ -20,7 +20,7 @@
                 align="center" 
                 justify="center"
             >
-                <span>{{ item.title }}</span>
+                <span class="ajusteTituloCarousel">{{ item.title }}</span>
             </v-row>
             </v-carousel-item>
         </v-carousel>
@@ -37,10 +37,10 @@ export default {
     data() {
 		return {
 			fotos: [
-				{ src: require("@/assets/imgCapaP.jpg"), title: "Você está preparada(o) para o seu novo negócio?" },
+				{ src: require("@/assets/imgCapaP.jpg"), title: "Você está preparada(o) para um debate? Ouça!" },
 				{ 
                     src: require("@/assets/imgCapaP.jpg"), 
-                    title: "Já conhece o produto que está revolucionando a maneira como nos alimentamos?" 
+                    title: "Sabe sobre o que falamos?" 
                 }
 				//{ src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg' },
 				//{ src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg '}
@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 .ajusteCarousel {
     margin-top: 2%;
     margin-left: 2%;
@@ -63,5 +63,11 @@ export default {
     border-bottom-left-radius: 58px;
 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+}
+
+.ajusteTituloCarousel 
+{
+    font-size: 2em;
+    color: rgb(255, 191, 63);
 }
 </style>

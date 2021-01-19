@@ -1,6 +1,6 @@
 <template>
     <v-app-bar
-    color="rgba(255, 255, 255, 0.1)"
+    color="rgba(1, 1, 1, 0.8)"
     app
     :collapse-on-scroll="!collapseOnScroll"
     :collapse="!collapseOnScroll"

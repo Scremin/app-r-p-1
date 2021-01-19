@@ -1,29 +1,47 @@
 <template>
     <v-content>
         <div class="Main panel2">
+            
+            <div class="classeB panel">
+                
+                <Carousel
+                class="classeCarousel"
+                />
 
-            <Carousel
-            class="classeB panel"
-            />
+                <NoticeCard
+                class="classeCardInf"
+                />
+                
+            </div>
 
             <div class="classeC panel">
-                <button class="classe2">Nossos Produtos</button>
-                <button class="classe2">Nossos Produtos</button>
-                <button class="classe2">Nova linha3</button>
-            </div>
+                <CompCard
+                />
+            </div >
 
         </div>
     </v-content>
 </template>
 
 <script>
+/* classe C (page right)
+            <div class="classeC panel">
+                <button class="classe2">Nossos Produtos</button>
+                <button class="classe2">Nossos Produtos</button>
+                <button class="classe2">Nova linha3</button>
+            </div>
+*/
 import Carousel from '@/widgets/carousel'
+import CompCard from '@/components/CompCard'
+import NoticeCard from '@/components/noticeCard'
 
   export default {
     name: 'MainHome',
     
     components: {
         Carousel,
+        CompCard,
+        NoticeCard
     },
 
     data() {
@@ -51,14 +69,16 @@ import Carousel from '@/widgets/carousel'
     /*flex-direction: column;*/
 
     justify-content: center;
-    /*align-content: space-around;
-    align-items: space-around;*/
+    justify-items: center;
+    /*align-content: center;*/
+    align-items: center;
     /*flex-wrap: wrap;*/
 
     height: 90%;
     width: 98%;
 
     margin: 1%;
+    padding: 1%;
 
     /*border: solid green;*/
 
@@ -71,17 +91,16 @@ import Carousel from '@/widgets/carousel'
 
 .classeB {
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: column;
     
     /*justify-content: center;*/
     /*align-content: start;*/
 
     /*align-items: center;*/
     /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
-    /*flex-flow: wrap;*/
 
-    height: 90%;
-    width: 60%;
+    height: 96%;
+    width: 72%;
     padding: 1%;
     margin: 1%;
 
@@ -94,6 +113,51 @@ import Carousel from '@/widgets/carousel'
     border-bottom-left-radius: 8px;
 }
 
+.classeCarousel {
+    display: flex;
+    /*flex-direction: column;*/
+    
+    /*justify-content: center;*/
+    /*align-content: start;*/
+
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
+    /*flex-flow: wrap;*/
+
+    height: 20%;
+    width: 98%;
+    padding: 0.4%;
+    margin: 1%;
+
+    /*border: solid yellow;*/
+    background-color: rgb(255, 191, 63);
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.classeCardInf {
+    display: flex;
+
+    height: 50%;
+    width: 98%;
+    padding: 0.4%;
+    margin: 1%;
+}
+
+.regiaoB_baixa {
+    display: flex;
+
+    flex-flow: wrap;
+    padding: 0.1%;
+
+    border: solid red;
+
+    height: 100%;
+}
+
 .classeA {
     display: flex;
 
@@ -103,32 +167,33 @@ import Carousel from '@/widgets/carousel'
     align-items: center;*/
     /*align-content:space-around;*/
 
-    flex-flow: wrap;
+    /*flex-flow: wrap;*/
 
-    height: 90%;
-    width: 25%;
+    height: 30%;
+    width: 40%;
     /*padding: 10%;*/
     margin: 1%;
 
     border: solid rgb(236, 4, 159);
+    background-color: rgb(34, 30, 21);
 }
 
 .classeC {
     display: flex;
     flex-direction: column;
 
-    justify-content: start; /* CONTEUDO DENTRO DA REGIÃO AZUL. */
+    /*justify-content: start; /* CONTEUDO DENTRO DA REGIÃO AZUL. */
     padding: 1%;
 
-    align-items: center;
+    /*align-items: center;*/
     /*align-content:space-around;*/
 
-    height: 90%;
-    width: 35%;
+    height: 96%;
+    width: 28%;
     /*padding: 10%;*/
     margin: 1%;
 
-    border: solid blue;
+    /*border: solid blue;*/
 
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -147,7 +212,8 @@ import Carousel from '@/widgets/carousel'
     /*padding: 10%;*/
     margin: 1%;
 
-    border: solid red; /* TESTE DE POSICIONAMENTO */
+    /*border: solid red; /* TESTE DE POSICIONAMENTO */
+    background-color: rgb(255, 191, 63);
 }
 
 .form-aux {
