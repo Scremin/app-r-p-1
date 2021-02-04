@@ -8,6 +8,10 @@
                 class="classeCarousel"
                 />
 
+                <ConteudoMain
+                class="classeCardInf"
+                />
+
                 <NoticeCard
                 class="classeCardInf"
                 />
@@ -33,6 +37,8 @@
 */
 import Carousel from '@/widgets/carousel'
 import CompCard from '@/components/CompCard'
+import ConteudoMain from '@/components/ConteudoMain'
+//import TesteCard from '@/components/TesteCard'
 import NoticeCard from '@/components/noticeCard'
 
   export default {
@@ -41,6 +47,8 @@ import NoticeCard from '@/components/noticeCard'
     components: {
         Carousel,
         CompCard,
+        ConteudoMain,
+        //TesteCard,
         NoticeCard
     },
 
@@ -74,7 +82,7 @@ import NoticeCard from '@/components/noticeCard'
     align-items: center;
     /*flex-wrap: wrap;*/
 
-    height: 90%;
+    height: 100%;
     width: 98%;
 
     margin: 1%;
@@ -99,7 +107,7 @@ import NoticeCard from '@/components/noticeCard'
     /*align-items: center;*/
     /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
 
-    height: 96%;
+    height: 100%;
     width: 72%;
     padding: 1%;
     margin: 1%;
@@ -124,7 +132,7 @@ import NoticeCard from '@/components/noticeCard'
     /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
     /*flex-flow: wrap;*/
 
-    height: 20%;
+    height: 10%;
     width: 98%;
     padding: 0.4%;
     margin: 1%;
@@ -141,7 +149,7 @@ import NoticeCard from '@/components/noticeCard'
 .classeCardInf {
     display: flex;
 
-    height: 50%;
+    /*height: 20%;*/
     width: 98%;
     padding: 0.4%;
     margin: 1%;
@@ -188,7 +196,7 @@ import NoticeCard from '@/components/noticeCard'
     /*align-items: center;*/
     /*align-content:space-around;*/
 
-    height: 96%;
+    height: 100%;
     width: 28%;
     /*padding: 10%;*/
     margin: 1%;

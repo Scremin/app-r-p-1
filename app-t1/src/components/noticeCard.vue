@@ -1,6 +1,6 @@
 <template>
     <v-row class="ajusteNoticeCard">
-      <v-card width="100%" height="100%">
+      <v-card>
         <v-img
           height="8%"
           :src="require('@/assets/imgLogo1.jpg')"
@@ -18,7 +18,7 @@
             </v-btn>
 
             <v-toolbar-title class="title white--text pl-0">
-              Notícias
+              Notícias e Comentários
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
@@ -50,7 +50,7 @@
             >
               <div>
                 <div class="font-weight-normal">
-                  <strong>{{ message.from }}</strong> @{{ message.time }}
+                  <strong>{{ message.from }}</strong> - {{ message.time }}
                 </div>
                 <div>{{ message.message }}</div>
               </div>
