@@ -1,0 +1,37 @@
+.class_topo_app {
+    display: flex;
+  
+    margin-top: 10%;
+    border: solid violet;
+  }
+  .class_position {
+    display: flex;
+    /*flex-direction: column;*/
+  
+    /*border: solid red;*/
+  }
+  
+  /*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');*/
+  
+  /*body {
+    font-family: "GothamRnd-Bold";
+    src: url("/fonts/GothamRnd-Bold.otf");
+  }*/
+  /*font-family: 'Roboto', sans-serif;*/
+  /*#app {
+    font-family: "GothamRndBold";
+    src: url("@/assets/fonts/GothamRndBold.otf");
+  }*/
+  
+  @font-face {
+    font-family: "gothamrounded-bold";
+    src: url("./assets/fonts/gothamrounded-bold.otf"); /*Gotham-Rounded-Bold.ttf*/
+  }
+  /*
+  @font-face {
+      font-family: "GothamRndBold";
+      src: url("./assets/fonts/GothamRndBold.otf");
+      font-weight: normal;
+      font-style: normal;
+    }*/
+  

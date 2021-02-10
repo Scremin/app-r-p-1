@@ -51,6 +51,9 @@ export default {
 </script>
 
 <style scope>
+
+/*.text-wrap*/
+
 .ajusteCarousel {
     margin-top: 2%;
     margin-left: 2%;
@@ -62,12 +65,22 @@ export default {
     border-top-left-radius: 58px;
     border-bottom-left-radius: 58px;
 
+    font-size: 1.5rem;
+    text-justify: wrap;
+
+    display: flex;
+    justify-content: center;
+
+
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
 }
 
 .ajusteTituloCarousel 
 {
+
     font-size: 2em;
+    font-style: bold;
+    
     color: rgb(255, 191, 63);
 }
 </style>

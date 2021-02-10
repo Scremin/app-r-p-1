@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
+//import GothamRndBold from '@/assets/fonts/GothamRndBold.otf';
 
 Vue.config.productionTip = false
 

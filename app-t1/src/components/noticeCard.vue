@@ -66,6 +66,30 @@
     data: () => ({
       messages: [
         {
+          from: 'teste',
+          message: 'teste',
+          time: '11:00am',
+          color: 'green',
+        },
+        {
+          from: 'teste',
+          message: 'teste',
+          time: '11:00am',
+          color: 'green',
+        },
+        {
+          from: 'teste',
+          message: 'teste',
+          time: '11:00am',
+          color: 'green',
+        },
+        {
+          from: 'teste',
+          message: 'teste',
+          time: '11:00am',
+          color: 'green',
+        },
+        {
           from: 'Adm1',
           message: `Tenha calma, jovem. Logo logo.. (msg teste)`,
           time: '10:42am',

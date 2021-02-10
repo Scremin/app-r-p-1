@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app>
+    <v-app id="app" class="font-weight-bold">
       <MainMenu/>
       <v-main class="class_position">
         <MainPage/>
@@ -40,17 +40,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.class_topo_app {
-  display: flex;
-
-  margin-top: 10%;
-  border: solid violet;
-}
-.class_position {
-  display: flex;
-  /*flex-direction: column;*/
-
-  /*border: solid red;*/
-}
-</style>
+<style src="./style.scss" lang="scss" scoped />
