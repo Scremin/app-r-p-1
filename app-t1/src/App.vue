@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app id="app" class="font-weight-bold">
+    <v-app id="app">
       <MainMenu/>
       <v-main class="class_position">
         <MainPage/>
@@ -16,22 +16,22 @@
         <BodyMain/>
 */
 //import Topo from '@/components/Topo'
-import MainMenu from '@/components/MainMenu'
+import MainMenu from '@/components/MainMenu' // dentro
 //import BodyMain from '@/components/BodyMain'
-import Footer from '@/components/Footer'
+import Footer from '@/components/Footer' // dentro
 //import ColsMain from '@/components/3-cols-main'
-import MainPage from '@/components/mainPage'
+import MainPage from '@/components/mainPage' // dentro
 
 export default {
   name: 'App',
 
   components: {
     //Topo,
-    MainMenu,
+    MainMenu, // dentro
     //BodyMain,
     //ColsMain,
-    Footer,
-    MainPage
+    Footer, // dentro
+    MainPage // dentro
   },
 
   data: () => ({
