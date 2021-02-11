@@ -1,5 +1,5 @@
 <template>
-    <v-content>
+    <v-main>
         <div class="Main panel2">
             
             <div class="classeB panel">
@@ -24,7 +24,7 @@
             </div >
 
         </div>
-    </v-content>
+    </v-main>
 </template>
 
 <script>
@@ -42,8 +42,7 @@ import ConteudoMain from '@/components/ConteudoMain'
 import NoticeCard from '@/components/noticeCard'
 
   export default {
-    name: 'MainHome',
-    
+    name: 'mainPage',
     components: {
         Carousel,
         CompCard,
@@ -51,10 +50,9 @@ import NoticeCard from '@/components/noticeCard'
         //TesteCard,
         NoticeCard
     },
-
     data() {
         return {
-
+            
         }
     }
   }
@@ -108,7 +106,7 @@ import NoticeCard from '@/components/noticeCard'
     /*flex-wrap: wrap;*/ /*QUEBRAR LINHA -> Nessa caso, adicionar coluna para qnt houver overflow.*/
 
     height: 100%;
-    width: 72%;
+    width: 70%;
     padding: 1%;
     margin: 1%;
 

@@ -32,66 +32,50 @@
           </v-app-bar>
         </v-img>
 
-          <v-card class="ajusteInterno mx-auto" height="400px" width="50%">
-              <v-img  class="white--text align-end" height="200px" width="100%" :src="require('./img_test_card1.jpg')"></v-img>
-              <v-card-title class="pb-0">Web Scraping + Software Desktop</v-card-title>
-              <v-card-text>
-              <br/>
-              <div>Web Scraping é a coleta de dados, mineração ou extração de dados de sites existentes na web que permite converter tais dados em informação útil. O resultado da coleta pode ser exibido e utilizado de várias formas.</div>
-                  </v-card-text>
-              <v-col class="text-right">
-                  <v-btn icon>
-                      <i class="fa fa-angle-right fa-3x"></i>
-                  </v-btn>
-              </v-col>
-          </v-card>
+        <div class="task-grid">
+          <template v-if="tasks.length">
+            <Task v-for="task in tasks" :key="task.name" :task="task"></Task>
+          </template>
+          <p v-else class="no-task">Não há conteúdo recente. :(</p>
+        </div>
 
-          <v-card class="ajusteInterno mx-auto" height="400px" width="30%">
-              <v-img  class="white--text align-end" height="200px" width="50%" :src="require('./img_test_card1.jpg')"></v-img>
-              
-              <v-card-title class="pb-0">Web Scraping + Software Desktop (teste)</v-card-title>
-              
-              <v-card-text>
-                <br/>
-                <div>Web Scraping é a coleta de dados, mineração ou extração de dados de sites existentes na web que permite converter tais dados em informação útil. O resultado da coleta pode ser exibido e utilizado de várias formas.</div>
-              </v-card-text>
-              
-              <v-col class="text-right">
-                  <v-btn icon>
-                      <i class="fa fa-angle-right fa-3x"></i>
-                  </v-btn>
-              </v-col>
-          </v-card>
-        
       </v-card>
     </v-row>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      messages: [
-        {
-          from: 'Adm1',
-          message: `Tenha calma, jovem. Logo logo.. (msg teste)`,
-          time: '10:42am',
-          color: 'deep-purple lighten-1',
-        },
-        {
-          from: 'John',
-          message: 'Fala, quando começam os debates? (msg teste)',
-          time: '10:37am',
-          color: 'green',
-        },
-        {
-          from: 'Adm2',
-          message: 'Sejam bem-vinda(o)s à nossa página. (msg teste)',
-          time: '9:47am',
-          color: 'deep-purple lighten-1',
-        },
-      ],
-    }),
+import Task from './Task.vue'
+
+export default {
+  components: { Task },
+  data() {
+      return {
+        pending: true,
+        tasks: [
+            {
+                name: 'Adm1',
+                pending: true
+            },
+            {
+                name: 'John',
+                pending: false
+            },
+            {
+                name: 'teste3',
+                pending: true
+            },
+            {
+                name: 'teste4',
+                pending: true
+            },
+            {
+                name: 'teste5',
+                pending: true
+            },
+        ]
+      }
   }
+}
 </script>
 
 <style scoped>
@@ -116,5 +100,20 @@
   margin-right: 2%;
   margin-bottom: 2%;
   margin-top: 2%;
+}
+
+.task-grid {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.task-grid .task {
+  margin: 10px;
+}
+
+.no-task {
+  color: #AAA;
+  font-size: 7rem;
 }
 </style>
