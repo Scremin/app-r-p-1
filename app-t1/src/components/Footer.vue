@@ -3,17 +3,8 @@
         color="rgba(1, 1, 1, 0.8)"
         class="backFooter"
     >
-        <div>
-            <input 
-                class="form-element"
-                v-model="emailInserido"
-                type="text"
-                @keydown.enter="add"
-                placeholder="Endereço de e-mail"
-            >
-            <button class="form-element" @click="add">>></button>
-        </div>
-        <span class="footers">Insira seu e-mail para receber <strong>mais informações</strong></span>
+        <v-img class="mt-4" :src="require('@/assets/Asset5.png')"></v-img>
+
         <hr class="footers">
         <div>{{ nomeFooter }} &copy; {{ new Date().getFullYear() }}</div>
         <div class="footers">.</div>
@@ -73,7 +64,7 @@ export default {
     }
 
     hr {
-        padding: 0px 100px;
+        padding: 0px 220px;
     }
 
     .form-element {
