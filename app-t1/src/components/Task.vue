@@ -1,7 +1,7 @@
 <template>
     <div class="task" :class="stateClass">
 
-        <h3>{{ task.name }}</h3>
+        <h3 class="posiTextCard">{{ task.name }}</h3>
 
         <v-img height="15%" :src="task.pic" class="posiImgCard">
 
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style>
-    .task {
+    .task { /* main task */
         box-sizing: border-box;
         width: 22%;
         height: 250px;
@@ -51,27 +51,37 @@ export default {
         align-items: center;
     }
 
-    .pending {
-        border-left: 12px solid #B73229;
+    .pending { /* classe atribuída dinamicamente via form */
+        border-left: 6px solid #da4237;
         background-color: rgb(215,25,33);
     }
 
-    .done {
-        border-left: 12px solid rgb(252, 208, 120);;
-        background-color: rgb(255, 191, 63);
-        color: rgb(215,25,33);
+    .done { /* classe atribuída dinamicamente via form */
+        border-left: 6px solid rgb(252, 208, 120); /* cor lateral */
+        background-color: rgb(255, 191, 63); /* cor principal do card */
+        color: rgb(215,25,33); /* cor título */
     }
 
-    .posiImgCard {
-        display: flex;
-        align-items: flex-end;
+    .posiTextCard { /* relativo ao texto principal do card */
+        margin: 10px;
     }
 
-    .posiTextImgCard {
+    .posiImgCard { /* relativo à foto */
         display: flex;
-        color: rgb(255, 191, 63);
+        align-items: flex-end; /* conteúdo ~texto~ na parte de baixo da foto */
+
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+    }
+
+    .posiTextImgCard { /* relativo ao que está dentro da foto */
+        display: flex;
         margin-left: 8%;
         font-size: 120%;
+
+        color: rgb(255, 191, 63); /* cor do texto dentro da foto */
     }
 
 </style>
