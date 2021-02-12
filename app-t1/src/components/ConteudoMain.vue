@@ -14,10 +14,10 @@
               color="white"
               icon
             >
-              <v-icon>mdi-ear-hearing</v-icon>
+              <v-icon color="black">mdi-ear-hearing</v-icon>
             </v-btn>
 
-            <v-toolbar-title class="title white--text pl-0">
+            <v-toolbar-title class="pl-0">
               Conteúdo Recente
             </v-toolbar-title>
 
@@ -27,7 +27,7 @@
               color="white"
               icon
             >
-              <v-icon>mdi-message-bulleted</v-icon>
+              <v-icon color="black">mdi-message-bulleted</v-icon>
             </v-btn>
           </v-app-bar>
         </v-img>
@@ -61,7 +61,7 @@ export default {
                 pending: false
             },
             {
-                name: 'teste3',
+                name: 'DEBATE NA COVILHÃ?',
                 pending: true
             },
             {

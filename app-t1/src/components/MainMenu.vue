@@ -25,8 +25,9 @@
                 target="_blank"
                 text
                 class="position-item-menu"
+                flat
             >
-                <span class="mr-2">HOME</span>
+                <span flat class="mr-2">HOME</span>
                 <v-icon>mdi-home-variant</v-icon>
             </v-btn>
 

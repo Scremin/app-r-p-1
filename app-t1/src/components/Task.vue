@@ -1,6 +1,16 @@
 <template>
     <div class="task" :class="stateClass">
-        <p>{{ task.name }}</p>
+
+        <h3>{{ task.name }}</h3>
+
+        <v-img height="15%" :src="require('@/assets/imgCapaP.jpg')" class="posiImgCard">
+
+            <div class="posiTextImgCard">
+                <p>Elevadores? Licitações?</p>
+            </div>
+
+        </v-img>
+
     </div>
 </template>
 
@@ -27,26 +37,41 @@ export default {
     .task {
         box-sizing: border-box;
         width: 22%;
-        height: 150px;
+        height: 250px;
         padding: 10px;
         border-radius: 8px;
-        font-size: 2rem;
+        font-size: 100%;
         font-weight: 300;
         cursor: pointer;
         user-select: none;
 
         display: flex;
+        flex-direction: column; /* Coluna com 3 elementos. */
         justify-content: center;
         align-items: center;
     }
 
     .pending {
         border-left: 12px solid #B73229;
-        background-color: rgb(215,25,33);;
+        background-color: rgb(215,25,33);
     }
 
     .done {
-        border-left: 12px solid #AAA;
+        border-left: 12px solid rgb(252, 208, 120);;
         background-color: rgb(255, 191, 63);
+        color: rgb(215,25,33);
     }
+
+    .posiImgCard {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .posiTextImgCard {
+        display: flex;
+        color: rgb(255, 191, 63);
+        margin-left: 10%;
+        font-size: 120%;
+    }
+
 </style>
