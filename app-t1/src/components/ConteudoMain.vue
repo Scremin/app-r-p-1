@@ -53,24 +53,34 @@ export default {
         pending: true,
         tasks: [
             {
-                name: 'Adm1',
-                pending: true
+                name: 'JÁ DEBATEU CONOSCO?',
+                pending: false,
+                conteudo: "Uma ou duas linhas?",
+                pic: require('@/assets/imgLogo1.jpg')
             },
             {
-                name: 'John',
-                pending: false
+                name: 'CONHECE O TESTE?',
+                pending: true,
+                conteudo: "Uma ou duas linhas?",
+                pic: require('@/assets/imgCapaP.jpg')
             },
             {
                 name: 'DEBATE NA COVILHÃ?',
-                pending: true
+                pending: false,
+                conteudo: "Elevadores? Licitações?",
+                pic: require('@/assets/imgCapaP.jpg')
             },
             {
                 name: 'teste4',
-                pending: true
+                pending: true,
+                conteudo: "uma ou duas linhas?",
+                pic: require('@/assets/imgCapaP.jpg')
             },
             {
                 name: 'teste5',
-                pending: true
+                pending: true,
+                conteudo: "uma ou duas linhas?",
+                pic: require('@/assets/imgCapaP.jpg')
             },
         ]
       }

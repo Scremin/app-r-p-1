@@ -3,10 +3,10 @@
 
         <h3>{{ task.name }}</h3>
 
-        <v-img height="15%" :src="require('@/assets/imgCapaP.jpg')" class="posiImgCard">
+        <v-img height="15%" :src="task.pic" class="posiImgCard">
 
             <div class="posiTextImgCard">
-                <p>Elevadores? Licitações?</p>
+                <p>{{ task.conteudo }}</p>
             </div>
 
         </v-img>
@@ -70,7 +70,7 @@ export default {
     .posiTextImgCard {
         display: flex;
         color: rgb(255, 191, 63);
-        margin-left: 10%;
+        margin-left: 8%;
         font-size: 120%;
     }
 
