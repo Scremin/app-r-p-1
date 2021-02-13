@@ -1,21 +1,20 @@
 <template>
-    <v-footer 
-        color="rgba(1, 1, 1, 0.8)"
-        class="backFooter"
-    >
+    <v-footer color="rgba(1, 1, 1, 0.8)" class="backFooter" >
+        
         <v-img class="mt-4" :src="require('@/assets/Asset5.png')"></v-img>
 
         <hr class="footers">
+
         <div>{{ nomeFooter }} &copy; {{ new Date().getFullYear() }}</div>
+
         <div class="footers">.</div>
+
         <v-spacer></v-spacer>
+
         <div><strong>Colaboradores e Parcerias</strong></div>
         <div>IMG</div>
 
-        <v-btn
-            target="_blank"
-            text
-        >
+        <v-btn target="_blank" text >
             <v-icon>mdi-open-in-new</v-icon>
         </v-btn>
 

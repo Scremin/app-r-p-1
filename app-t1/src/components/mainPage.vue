@@ -1,30 +1,28 @@
 <template>
-    <v-main>
-        <div class="Main panel2">
+    <div class="Main panel2">
+        
+        <div class="classeB panel">
             
-            <div class="classeB panel">
-                
-                <Carousel
-                class="classeCarousel"
-                />
+            <Carousel
+            class="classeCarousel"
+            />
 
-                <ConteudoMain
-                class="classeCardInf"
-                />
+            <ConteudoMain
+            class="classeCardInf"
+            />
 
-                <NoticeCard
-                class="classeCardInf"
-                />
-                
-            </div>
-
-            <div class="classeC panel">
-                <CompCard
-                />
-            </div >
-
+            <NoticeCard
+            class="classeCardInf"
+            />
+            
         </div>
-    </v-main>
+
+        <div class="classeC panel">
+            <CompCard
+            />
+        </div >
+
+    </div>
 </template>
 
 <script>
@@ -84,6 +82,7 @@ import NoticeCard from '@/components/noticeCard'
     width: 98%;
 
     margin: 1%;
+    margin-top: 5%;
     padding: 1%;
 
     /*border: solid green;*/
