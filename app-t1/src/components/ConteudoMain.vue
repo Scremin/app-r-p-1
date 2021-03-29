@@ -2,7 +2,7 @@
     <v-row class="ajusteNoticeCard">
       <v-card>
         <v-img
-          height="8%"
+          height="60"
           :src="require('@/assets/imgLogo1.jpg')"
           width="10"
           >
