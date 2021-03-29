@@ -1,7 +1,9 @@
 <template>
     <v-footer color="rgba(1, 1, 1, 0.8)" class="backFooter" >
         
-        <v-img class="mt-4" :src="require('@/assets/Asset5.png')"></v-img>
+        <v-img class="mt-4" :src="require('@/assets/Asset5.png')"
+        width="10"
+        height="60"></v-img>
 
         <hr class="footers">
 

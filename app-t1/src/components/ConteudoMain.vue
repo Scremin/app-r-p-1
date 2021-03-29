@@ -2,10 +2,9 @@
     <v-row class="ajusteNoticeCard">
       <v-card>
         <v-img
-          height="60"
+          height="8%"
           :src="require('@/assets/imgLogo1.jpg')"
-          width="10"
-          >
+        >
           <v-app-bar
             flat
             color="rgba(0, 0, 0, 0)"
