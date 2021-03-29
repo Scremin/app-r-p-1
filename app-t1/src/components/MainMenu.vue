@@ -36,7 +36,7 @@
                 text
                 class="position-item-menu"
             >
-                <span class="mr-2">DEBATEDORES</span>
+                <span class="mr-2" ref="">DEBATEDORES</span>
                 <v-icon>mdi-boxing-glove</v-icon>
             </v-btn>
 
