@@ -3,7 +3,7 @@
         
         <v-img class="mt-4" :src="require('@/assets/Asset5.png')"
         width="100"
-        height="60"></v-img>
+        height="100"></v-img>
 
         <hr class="footers">
 
